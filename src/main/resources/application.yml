@@ -1,0 +1,25 @@
+spring:
+  ai:
+    google:
+      genai:
+        project-id: gen-lang-client-0138231179
+        api-key: AIzaSyAx67G74qZhT5_UfTfE1zkrVMudk7_M9ZI
+        chat:
+          options:
+            model: gemini-2.5-flash
+        embedding:
+          api-key: AIzaSyAx67G74qZhT5_UfTfE1zkrVMudk7_M9ZI
+          options:
+            model: text-embedding-004
+
+    vectorstore:
+      weaviate:
+        host: localhost
+        scheme: http
+        port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
